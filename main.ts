@@ -28,7 +28,7 @@ export function isValidEmail(email) {
     return re.test(email);
 }
 
-export async function useGoogleTranslate(text: string, intolanguage: string) {
+export async function Translate(text: string, intolanguage: string) {
     const res = await fetch("https://libretranslate.com/translate", {
         method: "POST",
         body: JSON.stringify({
